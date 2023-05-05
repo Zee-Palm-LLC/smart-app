@@ -1,16 +1,10 @@
-# smart_app
+# Zee Palm UI Code
 
-A new Flutter project.
+Smart App UI done with Flutter 3.7.0
 
-## Getting Started
+## Details
 
-This project is a starting point for a Flutter application.
+This project includes Smart App UI with home and device detail screens.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://user-images.githubusercontent.com/128903428/236468628-641f843c-ec3b-4f29-8dfb-441dc4b71b17.png" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/128903428/236469368-fe3d6872-b296-48c2-b30f-27ba0bdb322c.png" width="200" height="400" />
