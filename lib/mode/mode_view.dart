@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 import 'package:smart_app/data/constants.dart';
 
@@ -25,7 +26,11 @@ class _ModeViewState extends State<ModeView> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        leading: const CustomIcons(icon: Icons.menu),
+        leading: InkWell(
+            onTap: () {
+              Get.back();
+            },
+            child: const CustomIcons(icon: Icons.arrow_back)),
         centerTitle: true,
         title: Text(widget.modeName,
             style: const TextStyle(
@@ -88,12 +93,12 @@ class _ModeViewState extends State<ModeView> {
                 },
               ),
               const SizedBox(height: 40),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Current Temperature',
                         style: TextStyle(fontSize: 12, color: Colors.white),
@@ -109,7 +114,7 @@ class _ModeViewState extends State<ModeView> {
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         'Current Humidity',
                         style: TextStyle(fontSize: 12, color: Colors.white),
@@ -158,8 +163,8 @@ class _ModeViewState extends State<ModeView> {
                 ),
               ),
               const SizedBox(height: 20),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   Expanded(
                       child: TemperatureCard(
                     heading: 'Heating',
@@ -184,7 +189,6 @@ class _ModeViewState extends State<ModeView> {
               ),
               const SizedBox(height: 20),
               Container(
-                height: 150,
                 width: double.maxFinite,
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
@@ -192,8 +196,8 @@ class _ModeViewState extends State<ModeView> {
                     borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   children: [
-                    Row(
-                      children: const [
+                    const Row(
+                      children: [
                         Text("Timer",
                             style: TextStyle(
                                 color: Colors.white,
@@ -226,9 +230,9 @@ class _ModeViewState extends State<ModeView> {
                         },
                       ),
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: const [
+                      children: [
                         Text("2H",
                             style:
                                 TextStyle(color: Colors.white, fontSize: 14)),

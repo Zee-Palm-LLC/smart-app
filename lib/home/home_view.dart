@@ -44,15 +44,15 @@ class _HomeViewState extends State<HomeView> {
         child: SafeArea(
           child: ListView(
             children: [
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               AccountInfoCard(addCallback: () {}),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               const WeatherInfoCard(),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               const CustomTabbar(),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               const HomePortionTabs(),
-              const SizedBox(height: 20),
+              const SizedBox(height: 15),
               Row(
                 children: [
                   Expanded(

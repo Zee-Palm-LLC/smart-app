@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
       defaultTransition: Transition.fadeIn,
-      scrollBehavior: ScrollBehavior().copyWith(overscroll: false),
+      scrollBehavior: const ScrollBehavior().copyWith(overscroll: false),
       home: const HomeView(),
     );
   }

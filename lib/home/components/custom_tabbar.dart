@@ -15,6 +15,7 @@ class CustomTabbar extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: TabBar(
+            indicatorSize: TabBarIndicatorSize.tab,
             indicator: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               color: Colors.lightBlueAccent,
@@ -23,15 +24,16 @@ class CustomTabbar extends StatelessWidget {
             labelStyle: const TextStyle(
                 color: Colors.white, fontWeight: FontWeight.w600, fontSize: 18),
             unselectedLabelColor: Colors.white,
-            tabs: [
-              const Tab(
+            dividerColor: Colors.transparent,
+            tabs: const [
+              Tab(
                 text: 'Energy',
               ),
               Tab(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
+                  children: [
                     Text("13.5 kmph",
                         style: TextStyle(
                             color: Colors.white,
